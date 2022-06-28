@@ -12,7 +12,6 @@ async function seed() {
     description: 'A collection of recipes for mixed drinks',
     status: 'Finished',
   });
-  
   console.log('Boston was added');
 
   await Book.create({
@@ -32,7 +31,7 @@ async function seed() {
   console.log('SQL for Dummies was added');
 
   mongoose.disconnect();
-};
+}
 
 seed();
 
