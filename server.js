@@ -8,7 +8,7 @@ const cors = require('cors');
 //bring in mongoose
 const mongoose = require('mongoose');
 //bring in a schema to interact with that model
-const Book = require('./models/books.js')
+const Book = require('./models/books.js');
 
 // connect mongoose to our MongoDB
 mongoose.connect(process.env.DB_URL);
@@ -44,14 +44,14 @@ async function getBooks(request, response, next) {
   } catch (error) {
     next(error);
   }
-};
+}
 
 app.get('*', (request, response) => {
   response.status(404).send('Not available');
 });
 
 //Errors
-app.use((error, request, response, next) => {
+app.use((error, request, response) => {
   response.status(500).send(error.message);
 });
 
