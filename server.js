@@ -26,6 +26,8 @@ const app = express();
 
 //MIDDLEWARE
 app.use(cors());
+//TO RECEIVE JSON FROM REQUEST!
+app.use(express.json());
 
 //DEFINE PORT--VALIDATE ENV IS WORKING
 const PORT = process.env.PORT || 3002;
@@ -35,7 +37,36 @@ app.get('/', (request, response) => {
   response.status(200).send('Welcome!');
 });
 
+//GET BOOKS (RETRIEVE FROM SERVER)
 app.get('/books', getBooks);
+
+//POST BOOKS (CREATE NEW BOOKS)
+app.post('/books', postBooks);
+
+//DELETE ROUTE (MUST HAVE PATH PARAMETER USING ':<VARIABLE>')
+app.delete('/books/:id', deleteBooks);
+
+async function deleteBooks(request, response, next) {
+  console.log('hey Audrey!')
+  let id = request.params.id;
+  try {
+    await Book.findByIdAndDelete(id);
+    response.status(202).send('book deleted');
+  } catch(error) {
+    next(error);
+  } 
+  console.log(id);
+}
+
+async function postBooks(request, response, next) {
+  console.log(request.body);
+  try {
+    let createdBook = await Book.create(request.body);
+    response.status(201).send(createdBook);
+  } catch (error) {
+    next (error);
+  }
+}
 
 async function getBooks(request, response, next) {
   try {
@@ -51,7 +82,7 @@ app.get('*', (request, response) => {
 });
 
 //Errors
-app.use((error, request, response) => {
+app.use((error, request, response, next) => {
   response.status(500).send(error.message);
 });
 
