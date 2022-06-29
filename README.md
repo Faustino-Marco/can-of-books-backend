@@ -27,19 +27,33 @@ Books are life-changing. They have the power to enlighten, educate, entertain, h
 
 ## Professional Pairing Practice
 
-### Logistical
+### Logistical 
 - What hours will you be available to communicate?
+  - We're committed to working until midnight (local time-respectively), possibly longer if necessary.
 - What platform will you use to communicate (ie. Slack, phone …)?
+  - Primarily slack and remo channels
 - How often will you take breaks?
+  - Ideally, hourly breaks, unless we're on a roll or committed to an isolated time-frame for any given individual task.
 - What is your plan if you start to fall behind?
+  - We'll seek the assistance of the TA's and instructor.
 
-### Cooperative
+### Cooperative 
 - Make a list of each parson’s strengths.
+  - Marco: back-end coding, js
+  - Riki & Marvin: front-end coding
 - How can you best utilize these strengths in the development of your application?
+  - We'll divide the work accordingly, with Riki and Marvin working primarily on the front-end, and Marco working primarily on the back-end.
 - In what areas do you each want to develop greater strength?
+  - Marco - needs to work on front-end
+  - Riki - needs to work on back-end
+  - Marvin - needs to work on back-end
 - Knowing that every person in your team needs to understand the code, how do you plan to     approach the day-to-day development?
+  - We'll divide the work at the beginning of our work time and support each other.
 
-### Conflict Resolution
+### Conflict Resolution 
 - What will your team do if one person is pulling all the weight while the other person is not contributing?
+  - We'll communicate directly with one another to be clear on our progress and reach out to TA's and instructors if necessary.
 - What will your team do if one person is taking over the project and not letting the other member contribute?
+  - We've discussed this already and we're confident that we're going to divide the work appropriately, given that we have three people to work with.
 - How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level?
+  - We've agreed on a general outline for how to manage the workload in a way that won't necessarily step on toes, so-to-speak. And a few of us are behind enough on our coursework that we can work on other things when our groupmates are working in the same areas. 
